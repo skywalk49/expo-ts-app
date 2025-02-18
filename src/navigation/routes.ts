@@ -3,8 +3,7 @@ export default [
         name: "TabBar",
         component: require("./TabBar").default,
         options: {
-            headerShown: false,
-            title: "明知山"
+            headerShown: false
         }
     },
     {
