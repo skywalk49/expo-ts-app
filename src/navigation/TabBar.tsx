@@ -32,6 +32,7 @@ const tabBar = [
 export default function TabBar() {
     return (
         <Tab.Navigator screenOptions={{
+            headerShadowVisible: false,
             tabBarLabelStyle: { fontSize: 12 }
         }}>
             {tabBar.map((item) =>

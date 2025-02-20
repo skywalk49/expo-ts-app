@@ -7,7 +7,7 @@ export default function AppNavigation() {
     return (
         <NavigationContainer>
             <Stack.Navigator screenOptions={{
-                presentation: "card",
+                headerShadowVisible: false,
                 headerBackTitle: "返回",
             }}>
                 {routes.map((item) => <Stack.Screen key={item.name} {...item} />)}
