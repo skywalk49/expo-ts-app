@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, View, Modal, Text } from 'react-native'
+import { Button, View } from 'react-native'
 import { PreviewImage } from '@/components'
 
 const images = [
