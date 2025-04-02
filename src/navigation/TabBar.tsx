@@ -1,3 +1,4 @@
+import { Pressable } from "react-native"
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Ionicons } from '@expo/vector-icons'
 import Home from "@/screens/Home"
@@ -34,7 +35,8 @@ export default function TabBar() {
         <Tab.Navigator screenOptions={{
             headerShadowVisible: false,
             headerTitleAlign: "center",
-            tabBarLabelStyle: { fontSize: 12 }
+            tabBarLabelStyle: { fontSize: 12 },
+            tabBarButton: (props) => <Pressable {...props} android_ripple={{ color: 'transparent' }} /> // 禁用水波纹
         }}>
             {tabBar.map((item) =>
                 <Tab.Screen key={item.name} name={item.name} component={item.component}
